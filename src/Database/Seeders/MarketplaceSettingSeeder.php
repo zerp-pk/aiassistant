@@ -18,7 +18,7 @@ class MarketplaceSettingSeeder extends Seeder
             $files = File::files($marketplaceDir);
             foreach ($files as $file) {
                 if (in_array($file->getExtension(), ['png', 'jpg', 'jpeg', 'gif', 'webp'])) {
-                    $screenshots[] = '/packages/workdo/AIAssistant/src/marketplace/' . $file->getFilename();
+                    $screenshots[] = '/packages/local/AIAssistant/src/marketplace/' . $file->getFilename();
                 }
             }
         }
@@ -33,7 +33,7 @@ class MarketplaceSettingSeeder extends Seeder
                 'sections'           => [
                     'hero'        => [
                         'variant'               => 'hero1',
-                        'title'                 => 'AI Assistant for ERPGo SaaS',
+                        'title'                 => 'AI Assistant for Zerp',
                         'subtitle'              => 'Transform content creation across your entire platform with intelligent AI-powered generation integrated seamlessly into every form and module.',
                         'primary_button_text'   => 'Install AI Assistant Module',
                         'primary_button_link'   => '#install',
@@ -55,19 +55,19 @@ class MarketplaceSettingSeeder extends Seeder
                                 'title'       => 'Universal AI Integration',
                                 'description' => 'Seamlessly integrated AI content generation across 16+ modules including HRM, Sales, CRM, Support, and more with contextual intelligence for relevant content creation.',
                                 'keyPoints'   => ['Integration across 16+ platform modules', 'Contextual AI understanding for each module', 'One-click content generation in any form', 'Seamless workflow integration without disruption'],
-                                'screenshot'  => '/packages/workdo/AIAssistant/src/marketplace/image1.png'
+                                'screenshot'  => '/packages/local/AIAssistant/src/marketplace/image1.png'
                             ],
                             [
                                 'title'       => 'Multi-Provider AI Support',
                                 'description' => 'Advanced AI capabilities with support for multiple providers including OpenAI, Claude, Gemini, and Anthropic with dynamic model selection and secure API management.',
                                 'keyPoints'   => ['Multiple AI provider support (OpenAI, Claude, Gemini)', 'Dynamic model selection based on provider', 'Secure API key management with encryption', 'Company-side configuration and control'],
-                                'screenshot'  => '/packages/workdo/AIAssistant/src/marketplace/image2.png'
+                                'screenshot'  => '/packages/local/AIAssistant/src/marketplace/image2.png'
                             ],
                             [
                                 'title'       => 'Advanced Generation Controls',
                                 'description' => 'Comprehensive customization options including 15+ language support, creativity levels, batch generation, and character length control for precise content creation.',
                                 'keyPoints'   => ['15+ language support with localization', 'AI creativity control (Low, Medium, High)', 'Batch generation with multiple result options', 'Character length control and real-time preview'],
-                                'screenshot'  => '/packages/workdo/AIAssistant/src/marketplace/image3.png'
+                                'screenshot'  => '/packages/local/AIAssistant/src/marketplace/image3.png'
                             ]
                         ]
                     ],

@@ -1,6 +1,6 @@
 {
     "name": "zerp/aiassistant",
-    "description": "Description for aiassistant package",
+    "description": "AI-powered assistant module for the Zerp ERP platform",
     "type": "library",
     "license": "MIT",
     "require": {},
